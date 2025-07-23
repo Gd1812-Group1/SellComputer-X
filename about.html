@@ -7,23 +7,98 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    :root { --main-yellow: #FAB301; --main-black: #000000; }
-    body { background: #fffde9; font-family: 'Roboto', Arial, sans-serif;}
-    .navbar, .footer-custom { background: linear-gradient(90deg, var(--main-yellow) 80%, var(--main-black) 100%);}
-    .navbar-brand { font-weight: 700; letter-spacing: 2px; font-size: 1.5rem;}
-    .anixia-logo { height: 44px; margin-right: 12px; }
-    .navbar-nav .nav-link { color: #fff !important; }
-    .navbar-nav .nav-link.active {
-      color: #fff !important;
-      font-weight: bold;
-    }
-    .navbar-nav .nav-link:hover { color: #FAB301 !important; }
-    .banner-section { position: relative; height: 210px; display: flex; align-items: center; justify-content: center; background: #000; overflow: hidden;}
-    .banner-img { object-fit: cover; width: 100%; height: 100%; opacity: 0.5; position: absolute; inset: 0;}
-    .banner-content { z-index: 2; position: relative; color: #fff; text-align: center; animation: banner-fade-in 1.2s cubic-bezier(.42,.23,.67,.98) forwards; opacity: 0; animation-delay: 0.2s;}
-    @keyframes banner-fade-in { 0% { transform: translateY(-80px); opacity: 0;} 100% { transform: translateY(0); opacity: 1;} }
-    .footer-custom { color: #000; border-top: 4px solid #FAB301;}
-    .footer-link:hover { color: var(--main-yellow);}
+    :root {
+  --main-yellow: #FAB301;
+  --main-black: #000000;
+}
+
+/* Body */
+body {
+  background: #fffde9;
+  font-family: 'Roboto', Arial, sans-serif;
+}
+
+/* Navbar & Footer */
+.navbar,
+.footer-custom {
+  background: linear-gradient(90deg, var(--main-yellow) 80%, var(--main-black) 100%);
+}
+
+.navbar-brand {
+  font-weight: 700;
+  letter-spacing: 2px;
+  font-size: 1.5rem;
+}
+
+.anixia-logo {
+  height: 44px;
+  margin-right: 12px;
+}
+
+/* Navbar Links */
+.navbar-nav .nav-link {
+  color: #fff !important;
+}
+
+.navbar-nav .nav-link.active {
+  color: #fff !important;
+  font-weight: bold;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #FAB301 !important;
+}
+
+/* Banner */
+.banner-section {
+  position: relative;
+  height: 210px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #000;
+  overflow: hidden;
+}
+
+.banner-img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  position: absolute;
+  inset: 0;
+}
+
+.banner-content {
+  z-index: 2;
+  position: relative;
+  color: #fff;
+  text-align: center;
+  animation: banner-fade-in 1.2s cubic-bezier(.42, .23, .67, .98) forwards;
+  opacity: 0;
+  animation-delay: 0.2s;
+}
+
+@keyframes banner-fade-in {
+  0% {
+    transform: translateY(-80px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Footer */
+.footer-custom {
+  color: #000;
+  border-top: 4px solid #FAB301;
+}
+
+.footer-link:hover {
+  color: var(--main-yellow);
+}
   </style>
 </head>
 <body>
@@ -32,7 +107,7 @@
     <nav class="navbar navbar-expand-md navbar-dark py-2">
       <div class="container">
         <a href="index.html" class="navbar-brand d-flex align-items-center">
-          <img src="ảnh3/logo234.png" alt="Logo SellComputer X" class="anixia-logo me-2">
+          <img src="/Lab3haha/ảnh3/logo234.png" alt="Logo SellComputer X" class="anixia-logo me-2">
         </a>
         <button class="navbar-toggler ms-3" type="button" data-bs-toggle="collapse" data-bs-target="#navMain">
           <span class="navbar-toggler-icon"></span>
@@ -40,10 +115,15 @@
         <div class="collapse navbar-collapse ms-md-4" id="navMain">
           <ul class="navbar-nav ms-auto align-items-center">
             <li class="nav-item"><a class="nav-link" href="index.html">Trang Chủ</a></li>
-            <li class="nav-item"><a class="nav-link active" href="about.html">Giới Thiệu</a></li>
+          <li class="nav-item"><a class="nav-link active" href="about.html">Giới Thiệu</a></li>
             <li class="nav-item"><a class="nav-link" href="services.html">Dịch Vụ</a></li>
             <li class="nav-item"><a class="nav-link" href="portfolio.html">Sản Phẩm</a></li>
+            <li class="nav-item"><a class="nav-link" href="khuyenmai.html">Khuyến Mãi</a></li>
+            <li class="nav-item"><a class="nav-link" href="phukien.html">Phụ Kiện</a></li>
+            <li class="nav-item"><a class="nav-link" href="giohang.html">Giỏ Hàng</a></li>
             <li class="nav-item"><a class="nav-link" href="contact.html">Liên Hệ</a></li>
+            <li class="nav-item"><a class="nav-link" href="feedback.html">Feedback</a></li>
+            <li class="nav-item"><a class="nav-link" href="login.html">Đăng Nhập</a></li>
           </ul>
         </div>
       </div>
@@ -52,7 +132,7 @@
   <main>
     <!-- Banner giới thiệu -->
     <section class="banner-section mb-4" aria-label="Banner giới thiệu">
-      <img src="ảnh3/tinh4.avif" class="banner-img" alt="Banner Giới thiệu SellComputer X">
+      <img src="/Lab3haha/ảnh3/tinh4.avif" class="banner-img" alt="Banner Giới thiệu SellComputer X">
       <div class="banner-content">
         <h1 class="display-6 fw-bold">Giới Thiệu Về SellComputer X</h1>
         <p class="fs-5 mb-0">Địa chỉ mua điện thoại & máy tính chính hãng, giá tốt, dịch vụ chuyên nghiệp</p>
@@ -62,7 +142,7 @@
     <section class="container mb-5">
       <article class="row g-4 align-items-center">
         <aside class="col-md-6">
-          <img src="ảnh3/cuahang.jpg" class="img-fluid rounded-4 shadow" alt="Không gian cửa hàng SellComputer X">
+          <img src="/Lab3haha/ảnh3/cuahang.jpg" class="img-fluid rounded-4 shadow" alt="Không gian cửa hàng SellComputer X">
         </aside>
         <section class="col-md-6">
           <h2 class="mb-2">Về Chúng Tôi</h2>
@@ -127,7 +207,7 @@
     <div class="container">
       <div class="row mb-2">
         <div class="col-12">
-          <img src="ảnh3/logo234.png" alt="SellComputer X Logo" style="height:34px;vertical-align:middle;">
+          <img src="/Lab3haha/ảnh3/logo234.png" alt="SellComputer X Logo" style="height:34px;vertical-align:middle;">
         </div>
       </div>
       <p class="mb-1">&copy; 2025 SellComputer X. All rights reserved.</p>
