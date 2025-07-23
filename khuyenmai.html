@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Khuyến Mãi | SellComputer X</title>
+  <!-- Bootstrap & Google Fonts -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --main-yellow: #FAB301;
+      --main-black: #000000;
+    }
+    body {
+      background: #fffde9;
+      font-family: 'Roboto', Arial, sans-serif;
+    }
+    .navbar,
+    .footer-custom {
+      background: linear-gradient(90deg, var(--main-yellow) 80%, var(--main-black) 100%);
+    }
+    .navbar-brand {
+      font-weight: 700;
+      letter-spacing: 2px;
+      font-size: 1.5rem;
+    }
+    .anixia-logo {
+      height: 44px;
+      margin-right: 12px;
+    }
+    .fpt-logo {
+      height: 36px;
+      margin-left: 16px;
+    }
+    .navbar-nav .nav-link {
+      color: #fff !important;
+    }
+    .navbar-nav .nav-link.active {
+      color: #fff !important;
+      font-weight: bold;
+    }
+    .navbar-nav .nav-link:hover {
+      color: #FAB301 !important;
+    }
+    .banner-section {
+      position: relative;
+      height: 240px;
+      background: #000;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .banner-img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+      opacity: 0.5;
+      position: absolute;
+      inset: 0;
+    }
+    .banner-content {
+      z-index: 2;
+      color: #fff;
+      text-align: center;
+      animation: banner-fade-in 1.2s cubic-bezier(.42, .23, .67, .98) forwards;
+      opacity: 0;
+      animation-delay: 0.2s;
+      position: relative;
+    }
+    @keyframes banner-fade-in {
+      0% { transform: translateY(-80px); opacity: 0; }
+      100% { transform: translateY(0); opacity: 1; }
+    }
+    .feature-card {
+      transition: transform .2s, box-shadow .2s;
+      border: none;
+    }
+    .feature-card:hover {
+      transform: scale(1.03);
+      box-shadow: 0 6px 22px #fab30144;
+    }
+    .promo-highlight {
+      background: linear-gradient(90deg, #FAB301 60%, #000 100%);
+      color: #fff;
+      border-radius: 16px;
+    }
+    .footer-custom {
+      color: #000;
+      border-top: 4px solid #FAB301;
+    }
+    .footer-link:hover {
+      color: var(--main-yellow);
+    }
+    @media (max-width: 768px) {
+      .banner-content h1 {
+        font-size: 1.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-md navbar-dark py-2">
+    <div class="container">
+      <a href="index.html" class="navbar-brand d-flex align-items-center">
+        <img src="/Lab3haha/ảnh3/logo234.png" alt="Logo" class="anixia-logo me-2">
+      </a>
+      <button class="navbar-toggler ms-3" type="button" data-bs-toggle="collapse" data-bs-target="#navMain">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse ms-md-4" id="navMain">
+        <ul class="navbar-nav ms-auto align-items-center">
+          <li class="nav-item"><a class="nav-link" href="index.html">Trang Chủ</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">Giới Thiệu</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Dịch Vụ</a></li>
+          <li class="nav-item"><a class="nav-link" href="portfolio.html">Sản Phẩm</a></li>
+          <li class="nav-item"><a class="nav-link active" href="khuyenmai.html">Khuyến Mãi</a></li>
+          <li class="nav-item"><a class="nav-link" href="phukien.html">Phụ Kiện</a></li>
+          <li class="nav-item"><a class="nav-link" href="giohang.html">Giỏ Hàng</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Liên Hệ</a></li>
+          <li class="nav-item"><a class="nav-link" href="feedback.html">Feedback</a></li>
+          <li class="nav-item"><a class="nav-link" href="login.html">Đăng Nhập</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Banner -->
+  <section class="banner-section mb-5">
+    <img src="/Lab3haha/ảnh3/tinh9.webp" alt="Banner Khuyến mãi" class="banner-img">
+    <div class="banner-content">
+      <h1 class="display-6 fw-bold">Ưu Đãi Hấp Dẫn Dành Riêng Cho Bạn</h1>
+      <p class="fs-5">Nhận ngay quà tặng & giảm giá lên đến 2 triệu đồng!</p>
+    </div>
+  </section>
+
+  <!-- Khuyến mãi đặc biệt -->
+  <section class="container mb-5">
+    <div class="promo-highlight p-4 shadow-sm mb-4">
+      <h3>🔥 Ưu đãi tháng 7: Tặng PMH đến 2 triệu + Trả góp 0%</h3>
+      <p>Chỉ áp dụng đến 31/07/2025. Số lượng có hạn.</p>
+    </div>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card feature-card h-100 shadow-sm">
+          <img src="/Lab3haha/ảnh3/iphone.webp" class="card-img-top" alt="iPhone khuyến mãi">
+          <div class="card-body">
+            <h5 class="card-title">iPhone 15 Pro Max</h5>
+            <p class="card-text">Giảm ngay 1.500.000 VND khi mua online.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card feature-card h-100 shadow-sm">
+          <img src="/Lab3haha/ảnh3/samsung.webp" class="card-img-top" alt="Samsung khuyến mãi">
+          <div class="card-body">
+            <h5 class="card-title">Samsung S24 Ultra</h5>
+            <p class="card-text">Tặng PMH 1 triệu + tai nghe Galaxy Buds2.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card feature-card h-100 shadow-sm">
+          <img src="/Lab3haha/ảnh3/xiomi.webp" class="card-img-top" alt="Xiaomi khuyến mãi">
+          <div class="card-body">
+            <h5 class="card-title">Xiaomi 14 Ultra</h5>
+            <p class="card-text">Tặng sạc nhanh Xiaomi 120W + Bao da chính hãng.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer-custom text-center py-4">
+    <div class="container">
+      <div class="row mb-2">
+        <div class="col-12">
+          <img src="/Lab3haha/ảnh3/logo234.png" alt="SellComputer X Logo" style="height:34px;vertical-align:middle;">
+        </div>
+      </div>
+      <p class="mb-1">&copy; 2025 SellComputer X. All rights reserved.</p>
+      <p class="mb-2">Email: <a href="mailto:lienhe@sellcomputerx.vn" class="footer-link">lienhe@sellcomputerx.vn</a></p>
+      <div class="d-flex justify-content-center gap-4">
+        <a href="https://facebook.com" class="footer-link">Facebook</a>
+        <a href="https://instagram.com" class="footer-link">Instagram</a>
+        <a href="https://youtube.com" class="footer-link">Youtube</a>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
